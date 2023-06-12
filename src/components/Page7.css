@@ -1,0 +1,50 @@
+.final-screen {
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(21, 49, 98, 255) 0%,
+      rgba(17, 17, 34, 255) 50%
+    );
+  }
+  
+  .final-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .final-message{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: white;
+      line-height: 38px;
+      padding-top: 0.8rem;
+      letter-spacing: 0.45px;
+  }
+  
+  .final-message-sub{
+      color: white;
+      font-size: 18px;
+      padding-top: 4px;
+  }
+  
+  .wallet-address{
+      color: #5D8EFB;
+      font-size: 18px;
+      padding-top: 5px;
+  }
+  
+  .proceed-btn{
+      width: 55vh;
+      height: 7vh;
+      margin-top: 25px;
+      border-radius: 25px;
+      border: none;
+      background-color: #2070F4;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+  } 

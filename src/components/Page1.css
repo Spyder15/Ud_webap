@@ -1,0 +1,164 @@
+.App {
+    text-align: center;
+    overflow: hidden;  
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    
+  }
+  
+  /* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  } */
+  
+  .App-header {
+    background-color: #252541;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    width: 100vw;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .iphone {
+    position: relative;
+    border-radius: 40%;
+    border-color: aliceblue;
+    z-index: -1;
+    top: 10%;
+  
+    /* left: 50%; */
+  }
+  
+  .mobile {
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: -1; */
+    position: relative;
+  }
+  
+  .heading {
+    white-space: break-spaces;
+    font-family: "Avenir Next";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    /* line-height: 78px; */
+  
+    /* identical to box height, or 100% */
+    text-align: center;
+    letter-spacing: -0.04em;
+  
+    background: linear-gradient(180deg, #ffffff -37.82%, #9ec1fa 119.23%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  img {
+    margin-top: 1.2rem;
+  }
+  
+  /* @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+  
+  .ellipse,
+  .iphone {
+    width: 100%;
+  }
+  
+  .ellipse {
+    z-index: -10;
+    /* margin-top: 10rem; */
+    height: 600px;
+  }
+  
+  .iphone,
+  .mobile {
+    margin-top: -35rem;
+  }
+  
+  .heading {
+    white-space: break-spaces;
+    font-family: "Avenir Next";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 78px;
+    /* identical to box height, or 100% */
+  
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+  
+  
+  .connect-text{
+    color: white;
+    background-color: #2070F4;
+    border: none;
+    width: 30vw;
+    min-height: 10vh;
+    font-size: 28px;
+    border-radius: 35px;
+    margin-top: 40px;
+    min-width: 300px;
+    /* overflow: hidden; */
+    /* text-overflow: clip; */
+    /* word-wrap: break-word; */
+    /* z-index: 100; */
+  }
+  /* .connect-text:focus{
+    color: black;
+  } */
+  
+  .sub-heading{
+    
+  margin-top: -2rem;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 48px;
+  /* identical to box height, or 171% */
+  
+  text-align: center;
+  letter-spacing: -0.02em;
+  
+  color: #A7C3FB;
+  
+  }
+  
+  .bottompart{
+    margin-top: 10px;
+    /* height: vh; */
+    height: 600px;
+  }
+  .connect-text:hover{
+    cursor: pointer;
+  }
+
+  /* button{
+    z-index: 1000;
+  } */

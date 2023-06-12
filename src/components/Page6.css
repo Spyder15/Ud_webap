@@ -1,0 +1,97 @@
+.transfer-screen {
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(21, 49, 98, 255) 0%,
+      rgba(17, 17, 34, 255) 50%
+    );
+  }
+  
+  .transfer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .transfer-heading{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 15px;
+  }
+
+  .transfer-number{
+    font-size: 24px;
+    color: #5D8EFB;
+    font-weight: 500;
+  }
+
+  .wallet-container{
+    /* box-sizing: border-box; */
+    width: 40vw;
+    color: white;
+    margin-top: 30px;
+    padding: 10px 10px;
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  .trarsfer-selector{
+    width: 50vw;
+
+  }
+
+  .currency{
+    text-align: left;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  select, input{
+    width: 42vw;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #384160;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #1F2138;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .blockchain{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .amount{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  input{
+    margin-left: -1px;
+    width: 41.5vw;
+  }
+
+  .confirm-btn{
+    width: 42vw;
+    margin-top: 40px;
+    border: 1px solid #1F2138;
+    background-color: #5D8EFB;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+
+  }
+
+  button:hover{
+    cursor: pointer;
+  }

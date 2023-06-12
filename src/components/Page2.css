@@ -1,0 +1,50 @@
+.connected-screen {
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(21, 49, 98, 255) 0%,
+      rgba(17, 17, 34, 255) 50%
+    );
+  }
+  
+  .connected-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .confirmation-message{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: white;
+      line-height: 38px;
+      padding-top: 0.8rem;
+      letter-spacing: 0.45px;
+  }
+  
+  .confirmation-message-sub{
+      color: white;
+      font-size: 18px;
+      padding-top: 4px;
+  }
+  
+  .wallet-address{
+      color: #5D8EFB;
+      font-size: 18px;
+      padding-top: 5px;
+  }
+  
+  .proceed-btn{
+      width: 35vh;
+      height: 5vh;
+      margin-top: 25px;
+      border-radius: 17px;
+      border: none;
+      background-color: #2070F4;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+  }

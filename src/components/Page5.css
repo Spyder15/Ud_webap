@@ -1,0 +1,56 @@
+.connected-screen {
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(21, 49, 98, 255) 0%,
+      rgba(17, 17, 34, 255) 50%
+    );
+  }
+  
+  .connected-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .mobile-heading {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .phone-input{
+      height: 50px;
+      width: 30vw;
+      margin-top: 25px;
+      margin-left: 6px;
+      background-color: #384160;
+      color: #A7C3FB;
+      border: none;
+      letter-spacing: 0.5px;
+  }
+  
+  .proceed-button{
+      margin-top: 25px;
+      margin-left: px;
+      height: 52px;
+      background-color: #2070F4;
+      color: white;
+      border: none;
+  }
+  
+  .proceed-button:hover{
+      cursor: pointer;
+  }
+  
+  .tele-img{
+      margin-top: 24px;
+  }

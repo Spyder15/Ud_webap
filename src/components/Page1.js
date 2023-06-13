@@ -20,62 +20,66 @@ function Page1({ acc, setacc, contract, setcontract }) {
   async function getAccount() {
     try {
       // POLYGON MAINNET REQUEST FOR ACCOUNTS ... TO CONNECT TO METAMASK
-    //   await window.ethereum.request({
-    //     method: "wallet_switchEthereumChain",
-    //     params: [{ chainId: "0x89" }],
-    //   });
-    // } catch (switchError) {
-    //   var next = 137;
-    //   // This error code indicates that the chain has not been added to MetaMask.{Uncomment to use}
-    //   if (switchError.code === 4902) {
-    //     try {
-    //       await window.ethereum.request({
-    //         method: "wallet_addEthereumChain",
-    //         params: [
-    //           {
-    //             chainId: "0x" + next.toString(16),
-    //             chainName: "Polygon Mainnet",
-    //             nativeCurrency: {
-    //               name: "MATIC",
-    //               symbol: "MATIC",
-    //               decimals: 18,
-    //             },
-    //             rpcUrls: [
-    //               " https://polygon-mainnet.infura.io ",
-    //               "https://rpc.ankr.com/polygon",
-    //               "https://polygon-bor.publicnode.com",
-    //             ] /* ... */,
-    //           },
-    //         ],
-    //       });
+      await window.ethereum.request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: "0x89" }],
+      });
+    } catch (switchError) {
+      var next = 137;
+      // This error code indicates that the chain has not been added to MetaMask.{Uncomment to use}
+      if (switchError.code === 4902) {
+        try {
+          await window.ethereum.request({
+            method: "wallet_addEthereumChain",
+            params: [
+              {
+                chainId: "0x" + next.toString(16),
+                chainName: "Polygon Mainnet",
+                nativeCurrency: {
+                  name: "MATIC",
+                  symbol: "MATIC",
+                  decimals: 18,
+                },
+                rpcUrls: [
+                  " https://polygon-mainnet.infura.io ",
+                  "https://rpc.ankr.com/polygon",
+                  "https://polygon-bor.publicnode.com",
+                ] /* ... */,
+              },
+            ],
+          });
 
           // THIS IS THE POLYGON MUMBAI REQUEST FOR ACCOUNTS... TO CONNECT TO METAMASK {uncomment to use}
-          await window.ethereum.request({
-            method: "wallet_switchEthereumChain",
-            params: [{ chainId: "0x13881" }],
-          });
-        } catch (switchError) {
-          var next = 80001;
-          // This error code indicates that the chain has not been added to MetaMask.
-          if (switchError.code === 4902) {
-            try {
-              await window.ethereum.request({
-                method: "wallet_addEthereumChain",
-                params: [
-                  {
-                    chainId: "0x" + next.toString(16),
-                    chainName: "Polygon Testnet",
-                    nativeCurrency: {
-                      name: "MATIC",
-                      symbol: "MATIC",
-                      decimals: 18,
-                    },
-                    rpcUrls: [
-                      "https://rpc-mumbai.maticvigil.com/",
-                    ] /* ... */,
-                  },
-                ],
-              });
+          //   await window.ethereum.request({
+          //     method: "wallet_switchEthereumChain",
+          //     params: [{ chainId: "0x13881" }],
+          //   });
+
+          // }
+
+          // catch (switchError) {
+
+          //   var next = 80001;
+          //   // This error code indicates that the chain has not been added to MetaMask.
+          //   if (switchError.code === 4902) {
+          //     try {
+          //       await window.ethereum.request({
+          //         method: "wallet_addEthereumChain",
+          //         params: [
+          //           {
+          //             chainId: "0x" + next.toString(16),
+          //             chainName: "Polygon Testnet",
+          //             nativeCurrency: {
+          //               name: "MATIC",
+          //               symbol: "MATIC",
+          //               decimals: 18,
+          //             },
+          //             rpcUrls: [
+          //               "https://rpc-mumbai.maticvigil.com/",
+          //             ] /* ... */,
+          //           },
+          //         ],
+          //       });
         } catch (addError) {
           console.log(addError);
         }
